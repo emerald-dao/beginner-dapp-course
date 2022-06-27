@@ -90,7 +90,9 @@ You may have heard these terms come up, but what do they actually mean?
 
 Oh no, this sounds complicated. Nope! It's not. DApps are literally just normal applications (Javascript, Python, etc) that ALSO have Smart Contracts involved. That's it.
 
-Also, we will be building these :)
+For example, Instagram is an application that is not a "DApp" because it doesn't involve any blockchain code. However, after Flow's recent announcement of NFT integration into Instagram, we can officially call Instagram a DApp. Examples of other DApps includes <a href="https://floats.city/" target="_blank">FLOAT</a>.
+
+Also, we will be building a DApp throughout this course :)
 
 ## Why do I care about all this?
 

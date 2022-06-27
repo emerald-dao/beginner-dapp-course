@@ -1,12 +1,6 @@
 # Chapter 1 - Day 2 - The Flow Blockchain & Cadence
 
-Yo yo yo! It's meeeeee! Jacob here. Hello. Now that we learned what the Blockchain is, Day 2 will cover why we have decided to learn the Flow Blockchain and how it compares to other Blockchains out there.
-
-## Video
-
-If you'd like to learn with a video, you can do that from the link below.
-
-[Introduction to Flow and Cadence](https://www.youtube.com/watch?v=iVevnipJbHo)
+Yo yo yo! It's meeeeee! Jacob here. Hello. Now that we learned what the Blockchain is, Day 2 will cover why we have decided to learn the Flow Blockchain and how it compares to other Blockchains out there. After all, if you're going to spend hours creating a DApp on Flow, let's figure out why we're doing it in the first place.
 
 ## The Flow Blockchain
 
@@ -15,7 +9,6 @@ If you'd like to learn with a video, you can do that from the link below.
 The Flow Blockchain is the best. Boom! I said it.
 
 ### Little History Lesson
-
 
 <img src="../../images/cryptokitty.png" alt="drawing" width="200"/>
 
@@ -36,27 +29,14 @@ After Dapper Labs had immense success with CryptoKitties, which was on Ethereum,
 
 Cadence is the Smart Contract programming language for the Flow Blockchain. That is, the code you will be writing to make Smart Contracts in this course will be in Cadence.
 
-Because Flow was largely founded to address some of the issues on Ethereum, the foundational elements of Cadence are rather responses/improvements (some would argue against this, but take it as you will) to Solidity. These are listed below.
+We will be writing Cadence code throughout this bootcamp since we are making our DApp on the Flow blockchain. However, because this is not a beginner cadence bootcamp, I will not be diving into the realm and wonders of Cadence...
 
-The fundamentals, or rather, "Cadence Programming Language Pillars":
-1. **Safety and Security**: Every Smart Contract must be secure. Cadence maximizes efficiency while maintaining the highest levels of safety and security. It accomplishes this because of its insanely strong type system, separation between contracts and transactions, and Resource Oriented Programming (see #5).
-2. **Clarity**: Code should be easy to read, especially Smart Contract code so that we, as users, can verify it is safe. This is achieved by making the code declarative and allowing the developer to express their intentions directly. Cadence makes those intentions very clear by design, which, along with readability, make auditing and reviewing more efficient.
-3. **Approachability**: The way Cadence is written is very familiar to other programming languages, making it easy to transition to if you have prior experience.
-4. **Developer Experience**: The developer should be able to debug in an easy manner, understand what does where, and not feel frustrated. Cadence does this by making error messages very clear.
-5. **Resource Oriented Programming**: This is by far the most important, and will take up about 80% of our time in this course. Cadence at its core uses things called `Resources`, and they define pretty much everything we do on Flow. I will not get into this now, because we will have an entire lesson on `Resources` at some point.
-
-*You can view them more in-depth on the Flow website [here](https://docs.onflow.org/cadence/#cadences-programming-language-pillars).*
-
-If you do not understand these, that is perfectly fine. We will touch on these topics throughout the entire course, and you will learn why each of these is so crucial to Cadence.
+> If you would like to get a better understanding of Cadence, I strongly encourage you to check out our <a href="https://github.com/emerald-dao/beginner-cadence-course/">Beginner Cadence Course</a>. It's really good.
 
 ## Conclusion
 
-That about wraps things up for today! In the next day, we will start getting into some Cadence code.
+That about wraps things up for today! In the next day, we will start by creating our first DApp.
 
 # Quests
 
-Please feel free to answer in the language of your choice.
-
-1. What are the 5 Cadence Programming Language Pillars? 
-
-2. In your opinion, even without knowing anything about the Blockchain or coding, why could the 5 Pillars be useful (you don't have to answer this for #5)?
+There are no quests for today. But don't think we're taking it easy on ya. Get ready for the next chapter ;)
