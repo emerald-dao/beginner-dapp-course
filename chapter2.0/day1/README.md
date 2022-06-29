@@ -46,7 +46,7 @@ To get a Next.js project onto our computer, we will be following their <a href="
 Open up a terminal on your computer and run:
 > npx create-next-app@latest emerald-dapp
 
-This will "clone" a Next.js project onto your computer and call it "emerald-dapp". What your computer is doing is installing all the necessary pieces of code and dependencies needed to run your application. Woohoo! This will be our DApp for the rest of the course.
+This will "clone" (or create) a Next.js project onto your computer and call it "emerald-dapp". What your computer is doing is installing all the necessary pieces of code and dependencies needed to run your application. Woohoo! This will be our DApp for the rest of the course.
 
 ## Launching Our DApp
 
@@ -56,17 +56,42 @@ After your computer does all of its complicated stuff and it looks like it is fi
 Before we even jump into code, we can look at the project by typing:
 > npm run dev 
 
-and launching your browser of choice. If you go to http://localhost:3000/, you will see your website! Hopefully, it will look something like this:
+This will start your application. Launch your browser of choice and go to http://localhost:3000/, you will see your website! Hopefully, it will look something like this:
 
 <img src="../images/base-nextjs.png" />
 
 *If it doesn't look like this, let an instructor know in the Emerald City Discord.*
 
-## Exploring Some Code
+## Installing VSCode
 
-## Making a Simple Modification
+> If you have already installed VSCode, skip this step.
+
+Before we begin editing our project, we need to make sure you have <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (VSCode) installed on your computer. VSCode is a code editor.
+
+## What is displayed on the screen?
+
+Once you have it installed, make sure you are in your `emerald-dapp` directory and type:
+> code .
+
+This will open up your project in VSCode. Navigate to the `./pages/index.js` file and make sure it looks like this:
+<img src="../images/base-code.png" />
+
+This is the frontend of your application. The code you are seeing is the "what". It is the stuff appearing on the screen when we went to http://localhost:3000/. All the text, boxes, links, etc.
+
+## Styling
+
+The webpage also looks pretty cool, right?! You may be wondering, how does it look like that? The answer is the *styling* of the application.
+
+All of the styling is contained in the `./styles` folder. Specifically, in the `./styles/Home.module.css` file. We will be modifying this in the next chapter.
 
 ## Conclusion
 
+All we wanted you to do today was install a Next.js project and run the project. If you could successfully do that, wooooohoooo! You will have no problem with the Quest.
+
+In tomorrow's content, we will explain what all the code is actually doing, and make some changes.
+
 # Quests
 
+For your quest today, you have one task:
+
+1. Take a screenshot of the running application and upload it to your quest submissions.
