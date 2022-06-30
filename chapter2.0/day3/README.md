@@ -106,9 +106,9 @@ When you click the button, you will see messages popping up in the "developer co
 
 ## Conclusion
 
-That's all for today! In this Chapter, we learned about HTML, CSS, and Javascript. These are the foundational elements we'll need to actually start learning about integrating Blockchain code into our DApps. 
+That's all for today!
 
-If you struggled with Chapter 2, I would recommend checking out introductory React.js or Next.js courses. They will help you understand all of this foundational stuff.
+Tomorrow, we will finish the base skeleton of our DApp.
 
 ## Quests
 
