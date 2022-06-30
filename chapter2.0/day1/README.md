@@ -11,10 +11,12 @@ In this section, I will teach you what Next.js is. But first, let's learn the di
 ### Frontend
 
 You know how when you load up a website, you see stuff on the screen? Well, there's two things that are immediately obvious to the user:
-- *What* is being displayed, and what *happens* when you click something.
-- How it *looks*, or its *styling*. 
 
-Both of these things are usually what we call "frontend" development. It's what the user is experiencing. For example, on Instagram, when you are:
+- *What* is being displayed.
+- How it *looks*, or its *styling*. 
+- What *happens* when you click something.
+
+These things are usually what we call "frontend" development. It's what the user is experiencing. For example, on Instagram, when you are:
 - Scrolling through your feed
 - Looking at people's posts
 - Clicking "search" and type stuff in
@@ -24,7 +26,7 @@ Both of these things are usually what we call "frontend" development. It's what 
 
 ### Backend
 
-However, there is also something called "backend" development. Backend development is the stuff that does more complicated procedures behind the scenes. In a traditional Web2 world (like Instagram), backend development usually includes:
+However, there is also something called "backend" development. Backend STINKS. Just kidding, I just don't like it because it's hard. Backend development is the stuff that does more complicated procedures behind the scenes. In a traditional Web2 world (like Instagram), backend development usually includes:
 - Fetching complicated information
 - Storing things in a database
 - Doing complex procedures that you wouldn't want to do on a frontend (to prevent loading times from being so long)
@@ -66,7 +68,7 @@ This will start your application. Launch your browser of choice and go to http:/
 
 > If you have already installed VSCode, skip this step.
 
-Before we begin editing our project, we need to make sure you have <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (VSCode) installed on your computer. VSCode is a code editor.
+I know, this part is SO boring. But before we begin editing our project, we need to make sure you have <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (VSCode) installed on your computer. VSCode is a code editor.
 
 ## What is displayed on the screen?
 

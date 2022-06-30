@@ -65,7 +65,9 @@ Then, open up your `./styles/Home.module.css` file and replace everything with t
 }
 ```
 
-Navigate back to http://localhost:3000/ and look at the changes. It should look something like this:
+Navigate back to http://localhost:3000/ and look at the changes. God Jacob, you are so talented. Our DApp looks SICK! I know, I know. I'm the best.
+
+It should look something like this:
 
 <img src="../images/base-emerald-dapp.png" />
 
@@ -190,6 +192,10 @@ Go to `./styles/Home.module.css` and let's break up the code just like we did be
 
 - This means that any `<a>` tag inside of a tag with a `className` of "title" should be a certain color. 
 - `text-decoration: none` just means it has no underline when we click the link.
+
+---
+
+PHEW! We are done. Wow, that was a lot. And maybe boring? I don't know. I hope you're still alive.
 
 ## Learn More
 
