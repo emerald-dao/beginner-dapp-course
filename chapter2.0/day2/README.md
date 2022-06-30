@@ -1,4 +1,4 @@
-# Chapter 2 - Day 2 - Learning Frontend Code
+# Chapter 2 Day 2 - Learning Frontend Code
 
 > If you have already worked with frontend code before, you may find this a bit boring. But it'll be really quick for you.
 

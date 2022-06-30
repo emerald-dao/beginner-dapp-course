@@ -1,4 +1,4 @@
-# Chapter 2 - Day 4 - Finishing the Skeleton
+# Chapter 2 Day 4 - Finishing the Skeleton
 
 Hey there! In this day, we will finalize the base skeleton of our DApp so that, in Chapter 3, we can focus purely on the blockchain stuff.
 

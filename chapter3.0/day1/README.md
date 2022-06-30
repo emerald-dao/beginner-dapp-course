@@ -1,4 +1,4 @@
-# Chapter 2 - Day 1 - Our First Smart Contract
+# Chapter 2 Day 1 - Our First Smart Contract
 
 Hello beautiful people! Welcome to the glorious Chapter 3, in which we will start diving into actual Blockchain stuff. Before we do some blockchain stuff in our DApp, it's important to give a brief (2 day long) introduction to Cadence.
 

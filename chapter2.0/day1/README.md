@@ -1,4 +1,4 @@
-# Chapter 2 - Day 1 - Creating our DApp
+# Chapter 2 Day 1 - Creating our DApp
 
 Hello you absolute idiots. In this day, we are going to actually jump into some code and start our DApp development. We will be using Next.js to create our first DApp.
 
