@@ -73,7 +73,7 @@ It should look something like this:
 
 ## Understanding What We Just Did
 
-> If you have worked with frontend code before, skip this section.
+> If you already understand all of that, skip this section.
 
 Let's understand what the heck we just did. First, let's start in the `./pages/index.js` file...
 
@@ -146,6 +146,10 @@ return (
 
 <img src="../images/emerald-dapp-home.png" target="_blank" />
 
+If it helps, you can think about this using the "box model":
+
+<img src="../images/box-model.png" target="_blank" />
+
 Notice also that when you hover over "Emerald DApp", your cursor turns into a pointer. If you click it, it actually takes you to the Emerald Academy site. This is because it's an `<a>` tag in code, which is used for links!
 
 ---
@@ -206,4 +210,15 @@ Because this is not necessarily a course on frontend development, if you'd like 
 > If you have any other resources that have helped you, and you want us to list them, please let me know!
 
 # Quests
+
+1. Change the color of "Emerald DApp" to whatever color you want
+2. Change the font size of the title
+3. Change the "Emerald DApp" link to a different link (this means messing with the `<a>` tag)
+4. Inside of your `<main>` tag, add a `<p>` tag and put whatever text you want in it. The box model will look like this:
+
+<img src="../images/quest-box-model.png" />
+
+5. Go to the `.main` class and add this line: `flex-direction: column`. Watch what it does!
+
+Take a screenshot of your changes (both the code and the result) and upload it to your quests
 
