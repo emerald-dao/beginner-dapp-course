@@ -18,7 +18,7 @@ Go to your `flow` folder and create a file called `config.js`. Inside that file,
 import { config } from "@onflow/fcl";
 
 config()
-  .put("accessNode.api", "https://rest-testnet.onflow.org/") // This connects us to Flow TestNet
+  .put("accessNode.api", "https://testnet.onflow.org/") // This connects us to Flow TestNet
   .put("discovery.wallet", "https://fcl-discovery.onflow.org/testnet/authn/") // Allows us to connect to Blocto & Lilico Wallet
 ```
 
@@ -28,7 +28,7 @@ What this does is it connects our DApp to Flow TestNet and tells our DApp that w
 
 Now that we have connected our DApp to the blockchain, let's try logging in!
 
-Go to `./components/Nav.jsx` and at the top, add three imports:
+Go to `./components/Nav.jsx` and at the top, add three more imports:
 ```javascript
 import * as fcl from "@onflow/fcl";
 import "../flow/config.js";
@@ -43,7 +43,7 @@ Inside of our `Nav` component, let's add a variable called `user` using `useStat
 const [user, setUser] = useState({ loggedIn: false });
 ```
 
-Note that when we put something inside the `useState` parenthesis (in this case: `{ loggedIn: false }`), that represents a default value of the variable.
+Note that when we put something inside the `useState` parenthesis (in this case: `{ loggedIn: false }`), that represents a default value of the variable. Because the user starts as logged out, it makes sense to have this be the default value.
 
 Next, right below that, add this piece of code:
 
@@ -81,7 +81,7 @@ function handleAuthentication() {
 
 Now we want to be able to call this function when we click the "Log In" button. Add an `onClick` handler to our `<button>` tag and when its clicked, have it call the function named `handleAuthentication`. Your button should now look like this:
 
-```javascript
+```html
 <button onClick={handleAuthentication}>Log In</button>
 ```
 
@@ -89,13 +89,43 @@ Save your changes and go to your webpage. Click the log in button and see what h
 
 <img src="../images/logging-in-iframe.png" />
 
-Isn't this just so cool? Or am I a boring nerd. 
+Isn't this just so cool? Or am I a boring nerd. Your `Nav.jsx` file should now look like this:
+
+```javascript
+import styles from '../styles/Nav.module.css';
+import { useState, useEffect } from 'react';
+import * as fcl from "@onflow/fcl";
+import "../flow/config.js";
+
+export default function Nav() {
+  const [user, setUser] = useState({ loggedIn: false });
+
+  useEffect(() => {
+    fcl.currentUser.subscribe(setUser);
+  }, [])
+
+  function handleAuthentication() {
+    if (user.loggedIn) {
+      fcl.unauthenticate();
+    } else {
+      fcl.authenticate();
+    }
+  }
+
+  return (
+    <nav className={styles.nav}>
+      <h1>Emerald DApp</h1>
+      <button onClick={handleAuthentication}>Log In</button>
+    </nav>
+  )
+}
+```
 
 ### Making our Button Respond
 
 The problem now is that, even when we log in with Blocto, there is no indication to the user that we are logged in. To change that, let's make our button look like this:
 
-```javascript
+```html
 <button onClick={handleAuthentication}>{user.loggedIn ? user.addr : "Log In"}</button>
 ```
 

@@ -129,7 +129,11 @@ You should now see that our `<Nav>` component looks pretty cool!
 
 The DApp we are building is one where you can change a "Greeting" value inside our contract, and then display it to the public. In order to do that, we need to be able to type our new greeting into an input box and then send it to the blockchain. So, let's make an input field!
 
-Inside of `./pages/index.js`, do two things: replace the "Goodbye" button with this code: `<input placeholder="Hello, Idiots!" />
+Inside of `./pages/index.js`, do two things: replace the "Goodbye" `<button>` with this code: 
+
+```html
+<input placeholder="Hello, Idiots!" />
+```
 
 Your webpage should now look like this:
 
@@ -155,6 +159,8 @@ Make your `<input>` tag look like this:
 ``` 
 
 Because of the `onChange` handler, it will call the function inside of the `{}` brackets every time the input is changed. That function takes in an `e`, which represents an "event" of the input field changing, and calls `setNewGreeting` (which changes the `newGreeting` variable) to `e.target.value`, which is the value that we type into the box.
+
+You will test out if this works inside your Quests.
 
 ## Conclusion
 

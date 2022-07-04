@@ -1,4 +1,4 @@
-# Chapter 3 Day 3 - Bringing Cadence to our DApp
+# Chapter 3 Day 3 - Bringing Cadence to our DApp & Deploying our Contract
 
 Today's lesson will be very short (WOOOHOOOO! We don't have to read Jacob's annoying course for too long!). We are going to bring our Cadence code into our DApp.
 
