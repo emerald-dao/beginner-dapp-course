@@ -192,10 +192,18 @@ export default function Home() {
 
 You have a lot of tools under your belt now, in fact much more than you think you do. Let's see what you're capable of...
 
-1. I deployed a contract called `SimpleTest` to an account with an address of `0x6c0d53c676256e8c`. I want you to make a button that, when clicked, executes a script to read the `number` variable from that contract. If you're curious, you can see the contract here: https://flow-view-source.com/testnet/account/0x6c0d53c676256e8c/contract/SimpleTest
+1. Instead of console logging the result after the script executes, I want you to:
+- Make a new variable named `greeting` using `useState`
+- Set the `greeting` variable to the `response` of the script call
+- Create a `<p>` tag after the `<div className={styles.flex}>` tag
+- Put the `greeting` variable inside of that `<p>` tag. This will make the result of your script show on your webpage! It should look something like this:
+
+<img src="../images/completed-day2-quest.png" />
+
+2a. I deployed a contract called `SimpleTest` to an account with an address of `0x6c0d53c676256e8c`. I want you to make a button that, when clicked, executes a script to read the `number` variable from that contract. If you're curious, you can see the contract here: https://flow-view-source.com/testnet/account/0x6c0d53c676256e8c/contract/SimpleTest
 
 Submit all the code you used to call the script, and the result of the script.
 
-2. Then, I want you to remove the button, and make the script execute every time the page refreshes.
+2b. Then, I want you to remove the button, and make the script execute every time the page refreshes.
 
 Submit all the code you used to do this.
