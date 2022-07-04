@@ -6,13 +6,13 @@ Welcome, noobs! Today, we are going to finally connect blockchain stuff directly
 
 FCL, or the Flow Client Library, is something that will allow us to do tons of blockchain stuff in our DApp. It will let us send transactions, execute scripts, and tons of other stuff directly from our frontend code. 
 
-Go to your project directory in your terminal and type `npm install @onflow/fcl`. This will install the dependency:
+> Go to your project directory in your terminal and type `npm install @onflow/fcl`. This will install the dependency:
 
 <img src="../images/install-fcl.png" />
 
 ## Importing & Connecting FCL
 
-Go to your `flow` folder and create a file called `config.js`. Inside that file, put the following code:
+> Go to your `flow` folder and create a file called `config.js`. Inside that file, put the following code:
 
 ```javascript
 import { config } from "@onflow/fcl";
@@ -28,7 +28,7 @@ What this does is it connects our DApp to Flow TestNet and tells our DApp that w
 
 Now that we have connected our DApp to the blockchain, let's try logging in!
 
-Go to `./components/Nav.jsx` and at the top, add three more imports:
+> Go to `./components/Nav.jsx` and at the top, add three more imports:
 ```javascript
 import * as fcl from "@onflow/fcl";
 import "../flow/config.js";
@@ -37,7 +37,7 @@ import { useState, useEffect } from 'react';
 
 First, we import `fcl` so that we can call some functions to log in and log out. Second, we import the config we defined so our DApp knows what network (testnet) it is talking to. And third, we import `useState` (which we already know), and `useEffect` (which we'll learn soon).
 
-Inside of our `Nav` component, let's add a variable called `user` using `useState`:
+> Inside of our `Nav` component, let's add a variable called `user` using `useState`:
 
 ```javascript
 const [user, setUser] = useState({ loggedIn: false });
@@ -45,7 +45,7 @@ const [user, setUser] = useState({ loggedIn: false });
 
 Note that when we put something inside the `useState` parenthesis (in this case: `{ loggedIn: false }`), that represents a default value of the variable. Because the user starts as logged out, it makes sense to have this be the default value.
 
-Next, right below that, add this piece of code:
+> Next, right below that, add this piece of code:
 
 ```javascript
 useEffect(() => {
@@ -55,7 +55,9 @@ useEffect(() => {
 
 `useEffect` is a function that runs every time something happens. That "something" comes from with is put inside the `[]` brackets. In this case, because `[]` is empty, this means "every time the page is *refreshed*, run `fcl.currentUser.subscribe(setUser)`. It looks complicated, but all this code is doing is making sure the `user` variable retains its value even if the page is refreshed.
 
-Lastly, we want to be able to actually log in. Let's create a function to do this. Right below our `useEffect`, make a new function called `handleAuthentication`:
+Lastly, we want to be able to actually log in. Let's create a function to do this. 
+
+> Right below our `useEffect`, make a new function called `handleAuthentication`:
 
 ```javascript
 function handleAuthentication() {
@@ -79,13 +81,17 @@ function handleAuthentication() {
   }
 ```
 
-Now we want to be able to call this function when we click the "Log In" button. Add an `onClick` handler to our `<button>` tag and when its clicked, have it call the function named `handleAuthentication`. Your button should now look like this:
+Now we want to be able to call this function when we click the "Log In" button. 
+
+> Add an `onClick` handler to our `<button>` tag and when its clicked, have it call the function named `handleAuthentication`. 
+
+Your button should now look like this:
 
 ```html
 <button onClick={handleAuthentication}>Log In</button>
 ```
 
-Save your changes and go to your webpage. Click the log in button and see what happens! You should see this:
+> Save your changes and go to your webpage. Click the log in button and see what happens! You should see this:
 
 <img src="../images/logging-in-iframe.png" />
 
@@ -123,7 +129,9 @@ export default function Nav() {
 
 ### Making our Button Respond
 
-The problem now is that, even when we log in with Blocto, there is no indication to the user that we are logged in. To change that, let's make our button look like this:
+The problem now is that, even when we log in with Blocto, there is no indication to the user that we are logged in. 
+
+> To change that, let's make our button look like this:
 
 ```html
 <button onClick={handleAuthentication}>{user.loggedIn ? user.addr : "Log In"}</button>
@@ -137,7 +145,7 @@ Now when you are logged in, you should see this:
 
 <img src="../images/displaying-address-login.png" />
 
-If you click the button again, it will log you back out, and you can log in again :)
+> If you click the button again, it will log you back out, and you can log in again :)
 
 ## Conclusion
 

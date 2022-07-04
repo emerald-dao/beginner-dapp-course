@@ -16,7 +16,7 @@ We will utilize a script to read our `greeting` variable from our smart contract
 
 In our `./pages/index.js` file, let's add a function to execute a script on Flow using FCL.
 
-Under the `runTransaction` function you made in the quests of Chapter 2 Day 4, make a new function called `executeScript`:
+> Under the `runTransaction` function you made in the quests of Chapter 2 Day 4, make a new function called `executeScript`:
 
 ```javascript
 async function executeScript() {
@@ -51,7 +51,7 @@ Okay whoah. That's a lot. What just happened?
 
 In this case, we want to read the `greeting` variable from our contract. Well, we actually already wrote it in Chapter 3 Day 1!
 
-Go to your `./flow/cadence/scripts/readGreeting.cdc` function and copy everything in that file into your `cadence` string. It should look like this:
+> Go to your `./flow/cadence/scripts/readGreeting.cdc` function and copy everything in that file into your `cadence` string. It should look like this:
 
 ```javascript
 async function executeScript() {
@@ -72,7 +72,9 @@ async function executeScript() {
 
 Sweet! But there's one problem: The blockchain is going to have no idea what `"../contracts/HelloWorld.cdc"` means. Instead, we have to give it an address! 
 
-In Chapter 3 Day 3, you deployed your contract to a testnet account. Get the address for that account (you probably stored it in your `flow.json`) and replace it in the import, like so:
+In Chapter 3 Day 3, you deployed your contract to a testnet account. 
+
+> Get the address for that account (you probably stored it in your `flow.json`) and replace it in the import, like so:
 
 ```javascript
 async function executeScript() {

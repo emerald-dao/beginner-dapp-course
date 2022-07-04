@@ -4,15 +4,15 @@ Today's lesson will be very short (WOOOHOOOO! We don't have to read Jacob's anno
 
 ## Installing the Cadence VSCode Extension
 
-> NOTE: If you are on Windows, this will not work. I know, it sucks. The extension is currently broken for windows, so please skip this section. 
+*NOTE: If you are on Windows, this will not work. I know, it sucks. The extension is currently broken for windows, so please skip this section.*
 
-> Only Mac and Linux will work.
+*Only Mac and Linux will work.*
 
 Now that we're no longer on the playground, we want to be able to have errors show up in our VSCode when we're coding Cadence. There's an extension to do that!
 
-Open VSCode. On the left side of VSCode, there's an icon that looks like 4 squares. Click that and search "Cadence".
+> Open VSCode. On the left side of VSCode, there's an icon that looks like 4 squares. Click that and search "Cadence".
 
-Click on the following extension and press "Install":
+> Click on the following extension and press "Install":
 
 <img src="../images/cadence-vscode-extension.png" />
 
@@ -20,7 +20,7 @@ Click on the following extension and press "Install":
 
 The Flow CLI will allow us to run transactions & scripts from the terminal, and allow us to do other Flow stuff like creating `flow.json` (coming soon...)
 
-Install the [Flow CLI](https://docs.onflow.org/flow-cli/install/). You can do that by:
+> Install the [Flow CLI](https://docs.onflow.org/flow-cli/install/). You can do that by:
 
 **Mac**
 - Pasting `sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"` into a terminal
@@ -35,7 +35,11 @@ You can confirm the Flow CLI is installed by going to a terminal and typing `flo
 
 ### flow.json
 
-Now that we have the Flow CLI installed, go to your terminal and `cd` into your project directory. Type `flow init`. This will create a `flow.json` file inside your project. This is needed to deploy contracts and to give us compile errors inside our Cadence code.
+> Now that we have the Flow CLI installed, go to your terminal and `cd` into your project directory. 
+
+> Type `flow init`
+
+This will create a `flow.json` file inside your project. This is needed to deploy contracts and to give us compile errors inside our Cadence code.
 
 ## Flow Folder
 

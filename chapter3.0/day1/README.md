@@ -16,6 +16,7 @@ If you'd like some videos to watch, you can watch these two videos (they are ver
 *Before going on, make sure you've read Chapter 1, Day 1. That day covers everything you need to know about Smart Contracts up to this point.*
 
 In order to start making our first Smart Contract, we need to figure out a place to actually put it! To do that, launch a browser of your choice (I would recommend Google Chrome), go to the Flow playground by pasting in this URL: https://play.onflow.org. After you do that, do the following
+
 1) On the left hand side, click the '0x01' tab.
 2) Delete everything in that page.
 
@@ -32,13 +33,17 @@ But what actually IS an address? Well, you can think of them as a user. When I w
 
 ### Where do smart contracts live?
 
-Smart Contracts are deployed accounts. As we mentioned above, accounts are owned by a user, and every account has an address associated with it that always begins with `0x`. In this case, since we are on the Flow playground, it has automatically given us 5 accounts, namely `0x01`, `0x02`, and so on. Thus, Smart Contracts live at an address. So when we deploy a contract named "Hello World" to account `0x01`, that is how we identify it. If we wanted to interact with it, we would have to know both the name of the contract and the address. We'll see this more in-depth when we import stuff later on.
+Smart Contracts are deployed accounts. As we mentioned above, accounts are owned by a user, and every account has an address associated with it that always begins with `0x`. 
+
+In this case, since we are on the Flow playground, it has automatically given us 5 accounts, namely `0x01`, `0x02`, and so on. Thus, Smart Contracts live at an address. So when we deploy a contract named "Hello World" to account `0x01`, that is how we identify it. If we wanted to interact with it, we would have to know both the name of the contract and the address. 
+
+We'll see this more in-depth when we import stuff later on.
 
 ### Back to our example...
 
 In this case, we will be deploying our Smart Contract to account `0x01`. This means account `0x01` is the **owner** of this Smart Contract. In the real world, you would deploy your Smart Contract to **your** account, but because this is a fake-simulation world, we can choose any account we want, so we chose `0x01`.
 
-Let's make our contract now. In the empty space, type the following:
+> Let's make our contract now. In the empty space, type the following:
 ```cadence
 pub contract HelloWorld {
 
@@ -78,7 +83,9 @@ Using our example above...
 
 Next, we put `self.greeting = "Hello, World!"` inside the `init()` function. Remember, the `init()` function is called when the contract is deployed, which only happens once. `self` is a keyword that means "the variable that is one layer above." In this case, `self.greeting` is referring to the `greeting` variable we declared right above it, and we set it equal to "Hello, World!"
 
-To deploy this contract, click the green "Deploy" button. Your page should look like this:
+> To deploy this contract, click the green "Deploy" button. 
+
+Your page should look like this:
 
 <img src="../images/helloworld.png" alt="drawing" size="400" />
 
@@ -90,7 +97,9 @@ Awesome!!! You've deployed your first Smart Contract. Note that this is not the 
 
 Let's make sure that our `greeting` variable actually got set to "Hello, World!". Remember, we can view data from the Blockchain using a script.
 
-On the left hand side, under "Script Templates", click on the tab that says "Script" and delete everything inside of it. Next, write the following code:
+> On the left hand side, under "Script Templates", click on the tab that says "Script" and delete everything inside of it. 
+
+> Next, write the following code:
 
 ```cadence
 import HelloWorld from 0x01
@@ -105,7 +114,7 @@ This Script will return the value of greeting, which is "Hello, World!" In order
 2. Next, we wrote a function. In Cadence, you write a function by doing `[access modifier] fun [function name](): [return type] { ... }`. In this case, we used `pub` for our access modifier (more on that later), named our function `main`, and said we will be returning a `String` type, which remember, is the type of `greeting`.
 3. We then accessed the `greeting` variable from the contract using `HelloWorld.greeting`.
 
-If you click "Execute" on the right side, you will see in the terminal it prints, "Hello, World!" like below:
+> If you click "Execute" on the right side, you will see in the terminal it prints, "Hello, World!" like below:
 
 <img src="../images/hwscript.png" alt="drawing" size="400">
 

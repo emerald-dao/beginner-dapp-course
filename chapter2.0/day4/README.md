@@ -10,9 +10,9 @@ What is a website without a nav bar? Let's add one together.
 
 One solution to creating a new nav bar would be to just throw some more code into our `./pages/index.js` file. But we don't want to put a ton of somewhat unrelated code into the same file, because if we did, complicated DApps would have all your code in one file and it would get extremely messy. The way that good coders (like me, of course!) structure our code is so that related things are together and separate from everything else. So let's create a new component!
 
-In the base directory (where your `styles` and `pages` folder live), make a new folder called `components`. In that folder, create a file called `Nav.jsx`. It should look like this:
+> In the base directory (where your `styles` and `pages` folder live), make a new folder called `components`. In that folder, create a file called `Nav.jsx`. It should look like this:
 
-After that, inside your `styles` folder, make a new file called `Nav.module.css`. This will be all the styling for our `Nav` component.
+> After that, inside your `styles` folder, make a new file called `Nav.module.css`. This will be all the styling for our `Nav` component.
 
 Your directory should be structured like this:
 
@@ -20,7 +20,7 @@ Your directory should be structured like this:
 
 ### Adding Some Code
 
-Inside of your `Nav.jsx` file, add this code:
+> Inside of your `Nav.jsx` file, add this code:
 
 ```javascript
 import styles from '../styles/Nav.module.css';
@@ -38,7 +38,7 @@ This code is very simple, it:
 - Creates a new component called `Nav`
 - Returns an empty `<nav>` tag
 
-Next, inside the `<nav>` tag, let's add some code:
+> Next, inside the `<nav>` tag, let's add some code:
 
 ```javascript
 <nav>
@@ -49,7 +49,7 @@ Next, inside the `<nav>` tag, let's add some code:
 
 This is great! But the problem is, nothing is displaying on the screen. Why is that? Well, it's because we don't put our `Nav` component anywhere in our DApp, so of course it's not displaying!
 
-Go back to `./pages/index.js` add two things:
+> Go back to `./pages/index.js` add two things:
 1. `import Nav from "../components/Nav.jsx` at the top
 2. Right before the `<main>` component, add `<Nav />`
 
@@ -112,7 +112,7 @@ Inside of `./styles/Nav.module.css`, let's make a new class called `nav`:
 }
 ```
 
-Now, inside of our `Nav.jsx` file, add the `nav` className to the `<nav>` tag:
+> Now, inside of our `Nav.jsx` file, add the `nav` className to the `<nav>` tag:
 
 ```javascript
 <nav className={styles.nav}>
@@ -129,7 +129,9 @@ You should now see that our `<Nav>` component looks pretty cool!
 
 The DApp we are building is one where you can change a "Greeting" value inside our contract, and then display it to the public. In order to do that, we need to be able to type our new greeting into an input box and then send it to the blockchain. So, let's make an input field!
 
-Inside of `./pages/index.js`, do two things: replace the "Goodbye" `<button>` with this code: 
+Inside of `./pages/index.js`, do two things: 
+
+> First, replace the "Goodbye" `<button>` with this code: 
 
 ```html
 <input placeholder="Hello, Idiots!" />
@@ -141,19 +143,19 @@ Your webpage should now look like this:
 
 We basically created an input field and added a placeholder of "Hello, Idiots!". Now, let's store the value we type into the input field somewhere.
 
-At the top of the file, add this line: 
+> At the top of the file, add this line: 
 ```javascript
 import { useState } from 'react';
 ```
 
-Then, right after the line that says `export default function Home() {`, add this line of code: 
+> Then, right after the line that says `export default function Home() {`, add this line of code: 
 ```javascript
 const [newGreeting, setNewGreeting] = useState('');
 ```
 
 `useState` is a fancy way to store variables. What it will do is create a variable called `newGreeting`. We can change this variable by calling `setNewGreeting` any time. Let's make it so that, when we type in the `<input>` tag, it changes `newGreeting`!
 
-Make your `<input>` tag look like this: 
+> Make your `<input>` tag look like this: 
 ```html
 <input onChange={(e) => setNewGreeting(e.target.value)} placeholder="Hello, Idiots!" />
 ``` 

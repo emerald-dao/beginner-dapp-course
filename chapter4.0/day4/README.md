@@ -89,7 +89,7 @@ export default function Home() {
 
 ## Sending Transactions Using FCL
 
-Lets implement the `runTransaction` function by sending a transaction to change our greeting using FCL.
+> Lets implement the `runTransaction` function by sending a transaction to change our greeting using FCL.
 
 I will show you the default code to send a transaction, and then explain how it works:
 
@@ -122,7 +122,7 @@ You already understand the `cadence` and `args` part. But what are the rest?
 
 The cool thing is that all of this ends up being pretty easy in the end. In our case, we want to send a transaction that changes our greeting, or in other words, calls the `changeGreeting` function in our contract. We already wrote this transaction in Chapter 3 Day 2!
 
-Let's implement our function fully now...
+> Let's implement our function fully now...
 
 ```javascript
 async function runTransaction() {

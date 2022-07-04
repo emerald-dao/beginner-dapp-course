@@ -24,7 +24,7 @@ As you can see, scripts also do not cost any money (phew!). Transactions on the 
 
 During the last day, we actually implemented our first script on the Flow playground. Let's revisit that example:
 
-Load up the flow playground (https://play.onflow.org), copy this contract into the `0x01` account, and click "Deploy":
+> Load up the flow playground (https://play.onflow.org), copy this contract into the `0x01` account, and click "Deploy":
 
 ```cadence
 pub contract HelloWorld {
@@ -37,7 +37,7 @@ pub contract HelloWorld {
 }
 ```
 
-Then, go to the Script tab on the left hand side and bring back our script from yesterday:
+> Then, go to the Script tab on the left hand side and bring back our script from yesterday:
 
 ```cadence
 import HelloWorld from 0x01
@@ -47,15 +47,21 @@ pub fun main(): String {
 }
 ```
 
-If you click "Execute," you should see "Hello, World!" in the console. Great! What you just did is run a script. Notice there was no payment needed and we **viewed** the data in our smart contract.
+> If you click "Execute," you should see "Hello, World!" in the console. 
+
+Great! What you just did is run a script. Notice there was no payment needed and we **viewed** the data in our smart contract.
 
 ## Transactions
 
-Now, let's do an example of a transaction. On the left hand side, under "Transaction Templates," click on the "Transaction" tab. Go ahead and delete everything in that tab so it looks like this:
+Now, let's do an example of a transaction. 
+
+> On the left hand side, under "Transaction Templates," click on the "Transaction" tab. Go ahead and delete everything in that tab so it looks like this:
 
 <img src="../images/emptytx.PNG" alt="drawing" size="400" />
 
-Okay, cool. Now, we want to modify the data on the blockchain. In order to do that, let's set up our transaction. We can do that by putting this code into the page:
+Okay, cool. Now, we want to modify the data on the blockchain. In order to do that, let's set up our transaction. 
+
+> We can do that by putting this code into the page:
 
 ```cadence
 transaction() {
@@ -77,7 +83,7 @@ You can see this being done in the `prepare` portion of the transaction, and tha
 
 Alright, so we want to change our `greeting` field to be something other than "Hello, World!" But there's a problem. We never added a way to modify our data in the smart contract! So we have to add a function in the contract to do that.
 
-Go back to account `0x01` and add this function inside the contract:
+> Go back to account `0x01` and add this function inside the contract:
 
 ```cadence
 pub fun changeGreeting(newGreeting: String) {
@@ -107,9 +113,20 @@ pub contract HelloWorld {
 }
 ```
 
-Now that we've set up our contract, let's go back to our transaction. First, let's make sure to `import` our HelloWorld contract, like so: `import HelloWorld from 0x01`. Then, we must decide: where do we want to call `changeGreeting`? In the `prepare` phase, or the `execute` phase? The answer is the `execute` phase because we are not accessing any data in the account. We are just changing some data in the smart contract. 
+Now that we've set up our contract, let's go back to our transaction. 
 
-We can do that by adding this line in the `execute` phase: `HelloWorld.changeGreeting(newGreeting: myNewGreeting)`. When you call a function in Cadence, you pass in parameters by doing `(argumentLabel: value`), where `argumentLabel` is the name of the argument and `value` is the actual value. You will notice we get an error that `myNewGreeting` isn't defined, which makes sense, because we aren't getting it from anywhere. So let's add a parameter called `myNewGreeting` to our transaction so we can pass in a value for a new greeting. We can do that like so:
+> First, let's make sure to `import` our HelloWorld contract, like so: `import HelloWorld from 0x01`. 
+
+Then, we must decide: where do we want to call `changeGreeting`? In the `prepare` phase, or the `execute` phase? The answer is the `execute` phase because we are not accessing any data in the account. We are just changing some data in the smart contract. 
+
+> We can do that by adding this line in the `execute` phase: 
+```cadence
+HelloWorld.changeGreeting(newGreeting: myNewGreeting)
+```
+
+When you call a function in Cadence, you pass in parameters by doing `(argumentLabel: value`), where `argumentLabel` is the name of the argument and `value` is the actual value. You will notice we get an error that `myNewGreeting` isn't defined, which makes sense, because we aren't getting it from anywhere. 
+
+> So let's add a parameter called `myNewGreeting` to our transaction so we can pass in a value for a new greeting. We can do that like so:
 
 ```cadence
 import HelloWorld from 0x01
@@ -130,7 +147,9 @@ Now, on the right side, you'll see a prompt pop up. We can type in our new greet
 
 Notice also that we can "sign" this transaction from any account. Since it doesn't really matter (we aren't accessing data in an account), feel free to choose any account you wish.
 
-After you click "Send", go back to your Script and click "Execute". You should now see "Goodbye, World!" printed in the console. Boom, you just successfully implemented your first transaction.
+> After you click "Send", go back to your Script and click "Execute". You should now see "Goodbye, World!" printed in the console. 
+
+Boom, you just successfully implemented your first transaction.
 
 That wraps things up for today.
 

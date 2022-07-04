@@ -20,7 +20,9 @@ Now, we will change up the application to make it simpler, and then explain what
 
 ## Remove Boilerplate Code
 
-Let's remove some boilerplate code (code that is there at the start that just takes up space). We will explain what everything is afterwards. Open up your `./pages/index.js` file and replace everything in the file with this code:
+Let's remove some boilerplate code (code that is there at the start that just takes up space). We will explain what everything is afterwards. 
+
+> Open up your `./pages/index.js` file and replace everything in the file with this code:
 
 ```javascript
 import Head from 'next/head'
@@ -45,7 +47,7 @@ export default function Home() {
 }
 ```
 
-Then, open up your `./styles/Home.module.css` file and replace everything with this code:
+> Then, open up your `./styles/Home.module.css` file and replace everything with this code:
 
 ```css
 .main {
@@ -65,7 +67,7 @@ Then, open up your `./styles/Home.module.css` file and replace everything with t
 }
 ```
 
-Navigate back to http://localhost:3000/ and look at the changes. God Jacob, you are so talented. Our DApp looks SICK! I know, I know. I'm the best.
+> Navigate back to http://localhost:3000/ and look at the changes. God Jacob, you are so talented. Our DApp looks SICK! I know, I know. I'm the best.
 
 It should look something like this:
 

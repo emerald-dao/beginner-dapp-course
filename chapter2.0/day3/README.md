@@ -16,7 +16,7 @@ Woohoo, we love you Jacob! This sounds like so much fun. I know, it is. Let's di
 
 Let's add some Javascript to our application, and maybe it will make more sense.
 
-Open up your `./pages/index.js` file. Under the `<p>` tag you added in the Quests of day 2, add this line of code: `<button>Hello</button>`
+> Open up your `./pages/index.js` file. Under the `<p>` tag you added in the Quests of day 2, add this line of code: `<button>Hello</button>`
 
 The surrounding code should now look something like this:
 
@@ -33,13 +33,15 @@ The surrounding code should now look something like this:
 
 ---
 
-Go back to your browser at http://localhost:3000 and see that there is now a button under to the text in the middle of the page. It should look like:
+> Go back to your browser at http://localhost:3000 and see that there is now a button under to the text in the middle of the page. It should look like:
 
 <img src="../images/begin-day3.png" />
 
 ---
 
-Cool! Now let's make that button do something. Go back to your code and right before your `return` keyword, add this piece of code:
+Cool! Now let's make that button do something. 
+
+> Go back to your code and right before your `return` keyword, add this piece of code:
 
 ```javascript
 function printHello() {
@@ -47,7 +49,11 @@ function printHello() {
 }
 ```
 
-Then, change your `<button>` to be this: `<button onClick={printHello}>Hello</button>`.
+> Then, change your `<button>` to be this: 
+
+```html
+<button onClick={printHello}>Hello</button>
+```
 
 What we just did is add a function called `printHello` that will perform some task when it is called. In this case, the "something" is a `console.log` that prints something to the console. 
 
