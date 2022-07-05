@@ -90,6 +90,62 @@ The webpage also looks pretty cool, right?! You may be wondering, how does it lo
 
 All of the styling is contained in the `./styles` folder. Specifically, in the `./styles/Home.module.css` file. We will be modifying this in the next chapter.
 
+## Storing our DApp in Github
+
+Before we wrap up for today, let's talk about GitHub. 
+
+If you haven't used GitHub before, it's one of the most essential tools for developers. It lets you store all of your code in a place so you can easily track progress. Most often its used for personal projects or team projects so you can all collaborate on the same code base together. For example, here is Emerald City's Github: https://github.com/emerald-dao
+
+> You can sign up for an account here: https://github.com/
+
+Let's add our code to our own GitHub accounts. Another way of saying this is we are going to "push" our code to GitHub.
+
+### Create a New Repository
+
+A repository is basically like a project. 
+
+1. Go to https://github.com/new and name your project "beginner-emerald-dapp"
+2. Make it "public"
+3. Click "Create repository"
+
+You will now be taken to a page with no files inside of it. Let's change that!
+
+### Pushing to Our Repository
+
+Open up a terminal on your computer and make sure you're in the base directory of your project.
+
+> Run the following lines of code:
+
+```bash
+git init
+git add .
+git commit -m "jacob is the best developer on the planet"
+git branch -M main
+git remote add origin
+git push -u origin main
+```
+
+> Then, copy and paste the URL of the GitHub repository and insert it into the command below, and then run it:
+
+```bash
+git remote add origin [THE URL GOES HERE]
+git push -u origin main
+```
+
+If this is your first time pushing to GitHub, it may ask you to log in. Then, if you go back to your GitHub repository, it should all be there!
+
+### Making Changes
+
+Now, what if we make changes to our code? How to we put it on GitHub?
+
+When you make a change in your code and save the file, you can push it to GitHub by running:
+
+```bash
+git add .
+git commit -m "you can put any message about the code changes here"
+git push origin main
+```
+
 ## Conclusion
 
 All we wanted you to do today was install a Next.js project and run the project. If you could successfully do that, wooooohoooo! You will have no problem with the Quest.
