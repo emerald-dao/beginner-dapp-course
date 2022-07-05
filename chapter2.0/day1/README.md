@@ -2,6 +2,10 @@
 
 Hello you absolute idiots. In this day, we are going to actually jump into some code and start our DApp development. We will be using Next.js to create our first DApp.
 
+# IMPORTANT NOTE
+
+Chapter 2 will focus on frontend development, specifically the semantics of HTML, CSS, React.js/Next.js. If you are already comfortable with these languages, you still need to complete Chapter 2 because you will be setting up for other chapters. However it will be very quick for you, and you can skim through the lesson. That is totally okay. 
+
 ## What is Next.js?
 
 > You can skip this section if you already know Next.js and frontend development
