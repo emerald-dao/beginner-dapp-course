@@ -88,7 +88,9 @@ This is the frontend of your application. The code you are seeing is the "what".
 
 The webpage also looks pretty cool, right?! You may be wondering, how does it look like that? The answer is the *styling* of the application.
 
-All of the styling is contained in the `./styles` folder. Specifically, in the `./styles/Home.module.css` file. We will be modifying this in the next chapter.
+All of the styling is contained in the `./styles` folder. There are two ways to add styling: 
+1. `./styles/globals.css` is a CSS file that applies to EVERYTHING. If you write a style in there, it will effect everything it relates to. 
+2. A "module", like `./styles/Home.module.css`, which is applied using the `styles` keyword in your Components. Modules only apply to the files they are imported in. We will learn more on this soon.
 
 ## Storing our DApp in Github
 
@@ -158,4 +160,10 @@ In tomorrow's content, we will explain what all the code is actually doing, and 
 
 For your quest today, you have one task:
 
-1. Take a screenshot of the running application and upload it to your quest submissions.
+1. What is the difference between frontend and backend? Can you provide a real life example (you can't use the one in this chapter)?
+
+2. What is the difference between global styling and module styling?
+
+3. Take a screenshot of the running application and upload it to your quest submissions.
+
+4. Upload the link to your public GitHub repository.

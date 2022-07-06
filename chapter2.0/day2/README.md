@@ -162,8 +162,6 @@ Now that we have gone through all of our code, you should at least understand wh
 
 Now let's walk through the styling, or in other words, the CSS code. CSS is what gives our application code some spice and makes it look the way it does.
 
-> Quick note: `./styles/globals.css` is a CSS file that applies to EVERYTHING. If you write a style in there, it will effect everything it relates to. This is unlike a "module", like `./styles/Home.module.css`, which is applied using the `styles` keyword in your Components.
-
 Go to `./styles/Home.module.css` and let's break up the code just like we did before:
 
 ```css
