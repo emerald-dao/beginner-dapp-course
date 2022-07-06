@@ -211,4 +211,4 @@ There are two lovely quests for today.
 
 2. Immediately after you send the transaction, wait for the transaction to be "Sealed" just like we did today. Then, call a script to read the `number` from the contract. Console log the result.
 
-Submit all the code you used to send the transaction, and the result of the script in part 1b.
+Submit all the code you used to send the transaction, and the result of the script.
