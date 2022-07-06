@@ -30,6 +30,12 @@ Then, you should be able to go to your deployed project on Vercel and find the U
 
 Here is mine: https://beginner-emerald-dapp.vercel.app/
 
+## Conclusion
+
+YOU ARE DONE! AHHHHHHHH. YOU FINISHED THE BEGINNER DAPP COURSE! I am so proud of you.
+
+If you want to check out other courses, please see our main webpage: https://academy.ecdao.org/
+
 ## Quests
 
 1. Upload the URL to your application!

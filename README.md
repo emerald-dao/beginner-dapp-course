@@ -20,15 +20,23 @@ Cadence is the smart contract language that allows you to do things on the Flow 
 
 ## 🚀 What will I know by the end?
 
-- How to make your own DApp
-- Do some front-end development
-- Connect your DApp to the blockchain
-- How to do basic styling
-- How to do some Cadence coding
+- An intro to the Flow blockchain (Chapter 1)
+- Do some front-end development (Chapter 2)
+- How to do basic styling (Chapter 2)
+- How to make your own DApp (Chapters 2-5)
+- How to do some Cadence coding (Chapter 3)
+- Connect your DApp to the blockchain (Chapter 3-5)
+
+## 🔖 What will I create?
+
+This is what you will be creating, from start to finish: https://beginner-emerald-dapp.vercel.app/
+
+<img src="./images/final-dapp.png" />
 
 ## 😇 Who is this course NOT meant for?
 
 - People who have never programmed before (meaning they don't know what a variable or function is).
+- People who have already created very basic DApps using FCL. This will be too boring for you.
 
 ## 📚 How does it work?
 
@@ -41,6 +49,9 @@ Here's an overview:
 - A completion certificate (<a href="">this FLOAT</a>) if you have completed all the quests. This will be proof that you have significant Cadence knowledge, and you will be able to show it to whoever you like as proof of expertise. Or just for fun! :D
 
 ## ❓ What do I need ahead of time?
+
+- A huge smile and a motivation to learn.
+- And some basic computer science knowledge (like what a variable and function are)
 
 ## 📁 What are quests?
 
