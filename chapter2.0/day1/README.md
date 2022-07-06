@@ -138,6 +138,8 @@ git push -u origin main
 
 If this is your first time pushing to GitHub, it may ask you to log in. Then, if you go back to your GitHub repository, it should all be there!
 
+<img src="../images/uploaded-code.png" />
+
 ### Making Changes
 
 Now, what if we make changes to our code? How to we put it on GitHub?
