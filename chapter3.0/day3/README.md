@@ -199,8 +199,14 @@ That was a lot today, but how cool is this?! We deployed our own contract to Flo
 
 ## Quests
 
-1. Send a screenshot of you reading your script
-2. Send a transaction of you changing your `greeting` variable
-3. Send a screenshot of you reading your changed `greeting` variable
-4. Go to https://flow-view-source.com/testnet/. Where it says "Account", paste in the Flow address you generated and click "Go". On the left hand side, click your "HelloWorld" contract. Isn't it so cool to see it live on Testnet? Then, send the URL to the page. 
-- EXAMPLE: https://flow-view-source.com/testnet/account/0x90250c4359cebac7/contract/HelloWorld
+1. Create a new smart contract in Cadence that has at least the following two things:
+- A variable to hold a value (like a number or a piece of text)
+- A function to change that variable
+
+After, deploy that contract to the same testnet account you generated today.
+
+2. Send a screenshot of you reading the variable from your new contract using the Flow CLI
+3. Send a screenshot of you changing the variable from your new contract using the Flow CLI
+4. Send a screenshot of you reading your changed variable from your new contract using the Flow CLI
+5. Go to https://flow-view-source.com/testnet/. Where it says "Account", paste in the Flow address you generated and click "Go". On the left hand side, you should see your "HelloWorld" contract and your new contract. Isn't it so cool to see them live on Testnet? Then, send the URL to the page. 
+- EXAMPLE: https://flow-view-source.com/testnet/account/0x90250c4359cebac7/

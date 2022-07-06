@@ -160,3 +160,4 @@ Feel free to answer in a language you're most comfortable in.
 3. Why did we make a `config.js` file? What does it do?
 4. What does our `useEffect` do?
 5. How do we import FCL?
+6. What does `fcl.currentUser.subscribe(setUser);` do?

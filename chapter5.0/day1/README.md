@@ -220,4 +220,11 @@ We have officially completed our Emerald DApp. The only remaining step is to dep
 
 ## Quests
 
+1. List all the possible transaction status codes and what each of them mean.
 
+2a. What does setTimeout do? 
+2b. How would we change our code if we wanted the `txStatus` variable to reset back to its original state after 5 seconds?
+
+3. What does the `fcl.tx(transactionId).subscribe(res => {...})` function do?
+
+4. Make at least 3 changes to the styling of the application. It can be anything (part of this quest is being creative!). List the 3 changes and point them out in a screenshot.
