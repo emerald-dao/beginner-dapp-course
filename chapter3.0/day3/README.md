@@ -33,14 +33,6 @@ The Flow CLI will allow us to run transactions & scripts from the terminal, and 
 
 You can confirm the Flow CLI is installed by going to a terminal and typing `flow version`. If a version appears, you're good to go.
 
-### flow.json
-
-> Now that we have the Flow CLI installed, go to your terminal and `cd` into your project directory. 
-
-> Type `flow init`
-
-This will create a `flow.json` file inside your project. This is needed to deploy contracts and to give us compile errors inside our Cadence code.
-
 ## Flow Folder
 
 Inside of our Emerald DApp, let's make a new folder called `flow`.
@@ -107,9 +99,31 @@ Your project directory should now look like this:
 
 ---
 
+### flow.json
+
+> Now that we have our contract in our project directory, go to your terminal and `cd` into the base project directory. 
+
+> Type `flow init`
+
+This will create a `flow.json` file inside your project. This is needed to deploy contracts and to give us compile errors inside our Cadence code.
+
 ## Deploying our Greeting Contract to TestNet
 
 Sweet! Now let's deploy our contract to TestNet so that we can start interacting with it.
+
+## Configuring `flow.json`
+
+> Inside of your `flow.json` file, make the "contracts" object look like this:
+
+```json
+"contracts": {
+  "HelloWorld": "./contracts/HelloWorld.cdc"
+},
+```
+
+This will allow your `flow.json` to know where your contracts live.
+
+## Creating an Account
 
 > 🔐 Generate a **deployer address** by typing `flow keys generate --network=testnet` into a terminal. Make sure to save your public key and private key somewhere, you will need them soon.
 
@@ -159,7 +173,7 @@ flow project deploy --network=testnet
 
 ## Interacting with our Contract
 
-Now that we deployed our contract to testnet, we can interact with it in our terminal using the FLOW CLI.
+Now that we deployed our contract to testnet, we can interact with it in our terminal using the Flow CLI.
 
 ### Reading our Greeting
 
