@@ -117,7 +117,7 @@ Sweet! Now let's deploy our contract to TestNet so that we can start interacting
 
 ```json
 "contracts": {
-  "HelloWorld": "./contracts/HelloWorld.cdc"
+  "HelloWorld": "./flow/cadence/contracts/HelloWorld.cdc"
 },
 ```
 
