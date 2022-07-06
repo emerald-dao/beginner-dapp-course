@@ -108,11 +108,13 @@ A repository is basically like a project.
 2. Make it "public"
 3. Click "Create repository"
 
-You will now be taken to a page with no files inside of it. Let's change that!
+You will now be taken to a page with no files inside of it. It should look like this:
+
+<img src="../images/empty-github.png" />
 
 ### Pushing to Our Repository
 
-Open up a terminal on your computer and make sure you're in the base directory of your project.
+Let's now add (or "push") our code to GitHub. Open up a terminal on your computer and make sure you're in the base directory of your project.
 
 > Run the following lines of code:
 
