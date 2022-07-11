@@ -216,11 +216,17 @@ Because this is not necessarily a course on frontend development, if you'd like 
 1. Change the color of "Emerald DApp" to whatever color you want
 2. Change the font size of the title
 3. Change the "Emerald DApp" link to a different link (this means messing with the `<a>` tag)
-4. Inside of your `<main>` tag, add a `<p>` tag and put whatever text you want in it. The box model will look like this:
+4. There are two parts.
+
+4a. Inside of your `<main>` tag, add a `<p>` tag and put whatever text you want in it. 
+
+4b. Go to the `.main` class and add this line: `flex-direction: column`. Watch what it does!
+
+The box model for Quest #4 looks like this:
 
 <img src="../images/quest-box-model.png" />
 
-5. Go to the `.main` class and add this line: `flex-direction: column`. Watch what it does!
+--- 
 
 Take a screenshot of your changes (both the code and the result) and upload it to your quests
 
