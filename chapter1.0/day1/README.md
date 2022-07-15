@@ -111,3 +111,5 @@ You are free to answer these questions in your own language of choice. And no, I
 2. Explain what a Smart Contract is. You can read this to help you, but you don't have to: https://www.ibm.com/topics/smart-contracts
 
 3. Explain the difference between a script and a transaction.
+
+4. What is the difference between Testnet and Mainnet? When would you develop on each?
