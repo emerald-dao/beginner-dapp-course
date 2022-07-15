@@ -4,6 +4,8 @@
 
 Sup sup! In this chapter, we will be teaching you what Javascript code is and what it does. Then we will add some to our project.
 
+> Also, before moving on, make sure to complete all previous quests. They are necessary to continuing at this point.
+
 ## What is Javascript?
 
 When we talked about HTML & CSS, we concluded that HTML is the *what*, and CSS is the *styling*. Well, adding Javascript will allow us to *do things* on the site.
