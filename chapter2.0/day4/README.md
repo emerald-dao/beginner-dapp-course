@@ -50,7 +50,7 @@ This code is very simple, it:
 This is great! But the problem is, nothing is displaying on the screen. Why is that? Well, it's because we don't put our `Nav` component anywhere in our DApp, so of course it's not displaying!
 
 > Go back to `./pages/index.js` add two things:
-1. `import Nav from "../components/Nav.jsx` at the top
+1. `import Nav from "../components/Nav.jsx"` at the top
 2. Right before the `<main>` component, add `<Nav />`
 
 Your `./pages/index.js` file should now look like this:
