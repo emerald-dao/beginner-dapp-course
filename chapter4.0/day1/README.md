@@ -18,7 +18,7 @@ FCL, or the Flow Client Library, is something that will allow us to do tons of b
 import { config } from "@onflow/fcl";
 
 config()
-  .put("accessNode.api", "https://rest-testnet.onflow.org/") // This connects us to Flow TestNet
+  .put("accessNode.api", "https://rest-testnet.onflow.org") // This connects us to Flow TestNet
   .put("discovery.wallet", "https://fcl-discovery.onflow.org/testnet/authn/") // Allows us to connect to Blocto & Lilico Wallet
 ```
 
@@ -53,7 +53,7 @@ useEffect(() => {
   }, [])
 ```
 
-`useEffect` is a function that runs every time something happens. That "something" comes from with is put inside the `[]` brackets. In this case, because `[]` is empty, this means "every time the page is *refreshed*, run `fcl.currentUser.subscribe(setUser)`. It looks complicated, but all this code is doing is making sure the `user` variable retains its value even if the page is refreshed.
+`useEffect` is a function that runs every time something happens. That "something" comes from what is put inside the `[]` brackets. In this case, because `[]` is empty, this means "every time the page is *refreshed*, run `fcl.currentUser.subscribe(setUser)`. It looks complicated, but all this code is doing is making sure the `user` variable retains its value even if the page is refreshed.
 
 Lastly, we want to be able to actually log in. Let's create a function to do this. 
 
