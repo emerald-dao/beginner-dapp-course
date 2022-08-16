@@ -4,8 +4,6 @@ Today's lesson will be very short (WOOOHOOOO! We don't have to read Jacob's anno
 
 ## Installing the Cadence VSCode Extension
 
-*NOTE: If you are on Windows, this will not work. I know, it sucks. The extension is currently broken for windows, so please skip this section.*
-
 *Only Mac and Linux will work.*
 
 Now that we're no longer on the playground, we want to be able to have errors show up in our VSCode when we're coding Cadence. There's an extension to do that!
