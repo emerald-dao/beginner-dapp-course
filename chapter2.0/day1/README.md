@@ -162,7 +162,7 @@ In tomorrow's content, we will explain what all the code is actually doing, and 
 
 For your quest today, you have one task:
 
-1. What is the difference between frontend and backend? Can you provide a real life example (you can't use the one in this chapter)?
+1. What is the difference between frontend and backend? Can you provide a real life example? Note: You can't use the one in this chapter.
 
 2. What is the difference between global styling and module styling?
 
