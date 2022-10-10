@@ -30,7 +30,7 @@ These things are usually what we call "frontend" development. It's what the user
 
 ### Backend
 
-However, there is also something called "backend" development. Backend STINKS. Just kidding, I just don't like it because it's hard. Backend development is the stuff that does more complicated procedures behind the scenes. In a traditional Web2 world (like Instagram), backend development usually includes:
+However, there is also something called "backend" development. Backend STINKS. Just kidding, I just don't like it because it's hard for me. Backend development is the stuff that gets run outside of your client. While "frontend" occurs on your client/computer, backend is usually on some alternate system that is running somewhere else. In a traditional Web2 world (like Instagram), backend development usually includes:
 - Fetching complicated information
 - Storing things in a database
 - Doing complex procedures that you wouldn't want to do on a frontend (to prevent loading times from being so long)
