@@ -49,9 +49,9 @@ To learn more about Next.js, you can check out their <a href="https://nextjs.org
 
 Before we dive into the rest of the course, we'll need to make sure we have some things installed. Yes, this is incredibly annoying. But it should be okay, and if you need any help, please reach out in the [Emerald Academy Discord](https://discord.gg/wjA875sMjV).
 
-1. Node: https://nodejs.org/en/download/
-2. npx: Open up a terminal and run `npm install -g npx`
-3. git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+1. Node: https://nodejs.org/en/download/. *You can confirm this worked successfully if you type `node -v` into your terminal and it returns something back.*
+2. npx: Open up a terminal and run `npm install -g npx`. *You can confirm this worked successfully if you type `npx -v` into your terminal and it returns something back.*
+3. git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git. *You can confirm this worked successfully if you type `git --version` into your terminal and it returns something back.*
 4. VSCode: https://code.visualstudio.com/
 
 ## Creating Our DApp
