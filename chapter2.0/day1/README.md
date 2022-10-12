@@ -45,6 +45,15 @@ The reason I told you these things is because Next.js actually allows us to do b
 
 To learn more about Next.js, you can check out their <a href="https://nextjs.org/" target="_blank">website</a>.
 
+## Installing Stuff
+
+Before we dive into the rest of the course, we'll need to make sure we have some things installed. Yes, this is incredibly annoying. But it should be okay, and if you need any help, please reach out in the [Emerald Academy Discord](https://discord.gg/wjA875sMjV).
+
+1. Node: https://nodejs.org/en/download/
+2. npx: Open up a terminal and run `npm install -g npx`
+3. git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+4. VSCode: https://code.visualstudio.com/
+
 ## Creating Our DApp
 
 To get a Next.js project onto our computer, we will be following their <a href="https://nextjs.org/docs/getting-started" target="_blank">docs</a>.
@@ -68,15 +77,10 @@ This will start your application. Launch your browser of choice and go to http:/
 
 *If it doesn't look like this, let an instructor know in the Emerald City Discord.*
 
-## Installing VSCode
-
-> If you have already installed VSCode, skip this step.
-
-I know, this part is SO boring. But before we begin editing our project, we need to make sure you have <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (VSCode) installed on your computer. VSCode is a code editor.
-
 ## What is displayed on the screen?
 
-Once you have it installed, make sure you are in your `emerald-dapp` directory and type:
+Previously, you installed VSCode. VSCode is a code editor that allows us to type some code, and has many useful extensions to help us be successful. To open our project code in VSCode, make sure you are in your `emerald-dapp` directory and type:
+
 > code .
 
 This will open up your project in VSCode. Navigate to the `./pages/index.js` file and make sure it looks like this:
