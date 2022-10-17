@@ -166,7 +166,7 @@ Now, go back to your `runTransaction` function. After we `console.log` the `tran
 ```javascript
 fcl.tx(transactionId).subscribe(res => {
   console.log(res);
-}
+})
 ```
 
 What this will do is utilize a `subscribe` function that gives us the new status of the transaction every time it changes inside the `res` object. 
