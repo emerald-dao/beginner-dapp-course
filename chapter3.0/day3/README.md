@@ -4,8 +4,6 @@ Today's lesson will be very short (WOOOHOOOO! We don't have to read Jacob's anno
 
 ## Installing the Cadence VSCode Extension
 
-*Only Mac and Linux will work.*
-
 Now that we're no longer on the playground, we want to be able to have errors show up in our VSCode when we're coding Cadence. There's an extension to do that!
 
 > Open VSCode. On the left side of VSCode, there's an icon that looks like 4 squares. Click that and search "Cadence".
