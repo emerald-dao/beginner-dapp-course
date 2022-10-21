@@ -180,10 +180,12 @@ Now that we have deployed our contract to testnet, we can configure our `flow.js
 Inside of your `flow.json`, change the "contracts" object to look like this:
 
 ```json
-"HelloWorld": {
-  "source": "./flow/cadence/contracts/HelloWorld.cdc",
-  "aliases": {
-    "testnet": "YOUR CONTRACT ADDRESS"
+"contracts": {
+  "HelloWorld": {
+    "source": "./flow/cadence/contracts/HelloWorld.cdc",
+    "aliases": {
+      "testnet": "YOUR CONTRACT ADDRESS"
+    }
   }
 }
 ```
