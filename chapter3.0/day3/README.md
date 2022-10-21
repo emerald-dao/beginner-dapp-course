@@ -171,6 +171,25 @@ flow project deploy --network=testnet
 
 Now that we deployed our contract to testnet, we can interact with it in our terminal using the Flow CLI.
 
+### Informing flow.json of our Deployed Contract
+
+Before we run a script using the Flow CLI in our terminal, we have to tell our `flow.json` where our contract lives on testnet. This is because right now, the import path (`"../contracts/HelloWorld.cdc"`) is meaningless inside our script file. 
+
+Now that we have deployed our contract to testnet, we can configure our flow.json to recognize that the contract exists at that address. 
+
+Inside of your `flow.json`, change the "contracts" object to look like this:
+
+```json
+"HelloWorld": {
+  "source": "./flow/cadence/contracts/HelloWorld.cdc",
+  "aliases": {
+    "testnet": "YOUR CONTRACT ADDRESS"
+  }
+}
+```
+
+Now, when you run your script, it will automatically replace the local import path to the deployed contract address.
+
 ### Reading our Greeting
 
 To run our `readGreeting.cdc` script from the terminal, go to your project directory and type:
