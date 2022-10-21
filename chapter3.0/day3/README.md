@@ -175,7 +175,7 @@ Now that we deployed our contract to testnet, we can interact with it in our ter
 
 Before we run a script using the Flow CLI in our terminal, we have to tell our `flow.json` where our contract lives on testnet. This is because right now, the import path (`"../contracts/HelloWorld.cdc"`) is meaningless inside our script file. 
 
-Now that we have deployed our contract to testnet, we can configure our flow.json to recognize that the contract exists at that address. 
+Now that we have deployed our contract to testnet, we can configure our `flow.json` to recognize that the contract exists at that address. 
 
 Inside of your `flow.json`, change the "contracts" object to look like this:
 
