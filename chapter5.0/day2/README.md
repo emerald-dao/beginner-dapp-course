@@ -22,7 +22,7 @@ Then, go to your profile screen that looks like this:
 
 <img src="../images/deploy-dapp.png" />
 
-Wait a few minutes and make sure there are no errors. If there are, reach out in the Emerald Academy chat in the <a href="https://discord.gg/emeraldcity" target="_blank">Emerald City Discord</a>.
+Wait a few minutes and make sure there are no errors. If there are, reach out in the Emerald Academy chat in the <a href="https://discord.gg/wjA875sMjV" target="_blank">Emerald City Discord</a>.
 
 Then, you should be able to go to your deployed project on Vercel and find the URL where your project is deployed. 
 
