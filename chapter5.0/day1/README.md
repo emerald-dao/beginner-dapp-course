@@ -57,6 +57,7 @@ button {
   margin: 5px;
   background-color: #35e9c6;
   color: #1e3a8a;
+  cursor: pointer;
 }
 ```
 
