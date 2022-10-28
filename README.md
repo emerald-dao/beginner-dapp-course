@@ -65,9 +65,9 @@ Step 1: Create a Github repository.
 
 Step 2: Put your quests answers in the repository in a well organized manner.
 
-Step 3: Then, when you want them to be reviewed, submit the repository link in the #quest-submissions channel inside the [Emerald Academy Discord](https://discord.gg/wjA875sMjV) and our instructors will review them. 
+Step 3: When you want them to be reviewed, submit the repository link in the #quest-submissions channel inside the [Emerald Academy Discord](https://discord.gg/wjA875sMjV) and our instructors will review them. 
 
-🙋 NOTE: If this is your first time of submiting quests for review in Emerald Academy. Kindly, checkout this helpful step-by-step guide on [how to use Github to create your first quests repository like a pro](https://github.com/SolomonFoskaay/Github-Tutorial-How-To-Use-Github-Like-A-Pro-Developer/blob/main/Ep1.md) to get started easily.
+🙋 NOTE: If this is your first time of submiting quests for review in Emerald Academy, kindly check out this helpful step-by-step guide on [how to use Github to create your first quests repository like a pro](https://github.com/SolomonFoskaay/Github-Tutorial-How-To-Use-Github-Like-A-Pro-Developer/blob/main/Ep1.md) by Foskaay, one of our instructors! :)
 
 ## 🚗 When can I start?
 
