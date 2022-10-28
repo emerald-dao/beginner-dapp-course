@@ -61,7 +61,7 @@ Quests are like homework assignments. There are quests for every day of content.
 
 ## 🙋 How to Submit Quests
 
-Step 1: Create a Github repository.  
+Step 1: Decide on a place to store your quests (ex. a Github repository) 
 
 Step 2: Put your quests answers in the repository in a well organized manner.
 
