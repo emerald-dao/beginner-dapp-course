@@ -65,7 +65,7 @@ Step 1: Decide on a place to store your quests (ex. a Github repository)
 
 Step 2: Put your quests answers in the repository in a well organized manner.
 
-Step 3: When you want them to be reviewed, submit the repository link in the #quest-submissions channel inside the [Emerald Academy Discord](https://discord.gg/wjA875sMjV) and our instructors will review them. 
+Step 3: When you want them to be reviewed, submit the repository link in the #quest-submissions channel inside the [Emerald City Discord](https://discord.gg/emeraldcity) and our instructors will review them. 
 
 🙋 NOTE: If this is your first time of submiting quests for review in Emerald Academy, kindly check out this helpful step-by-step guide on [how to use Github to create your first quests repository like a pro](https://github.com/SolomonFoskaay/Github-Tutorial-How-To-Use-Github-Like-A-Pro-Developer/blob/main/Ep1.md) by Foskaay, one of our instructors! :)
 
@@ -77,7 +77,7 @@ You can start the first day [here](https://github.com/emerald-dao/beginner-dapp-
 
 ## 💚 Emerald Academy
 
-This course was created by <a href="https://academy.ecdao.org" target="_blank">Emerald Academy</a>, which is a series of educational resources & bootcamps created by your *best* friends at <a href="https://ecdao.org/" target="_blank">Emerald City</a>. If you're interested in more educational content or getting involved in the broader Emerald Academy community, come join our <a href="https://discord.gg/wjA875sMjV" target="_blank">Discord</a> :)
+This course was created by <a href="https://academy.ecdao.org" target="_blank">Emerald Academy</a>, which is a series of educational resources & bootcamps created by your *best* friends at <a href="https://ecdao.org/" target="_blank">Emerald City</a>. If you're interested in more educational content or getting involved in the broader Emerald Academy community, come join our <a href="https://discord.gg/emeraldcity" target="_blank">Discord</a> :)
 
 ## 🏁 Ending Remarks
 

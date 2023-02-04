@@ -47,7 +47,7 @@ To learn more about Next.js, you can check out their <a href="https://nextjs.org
 
 ## Installing Stuff
 
-Before we dive into the rest of the course, we'll need to make sure we have some things installed. Yes, this is incredibly annoying. But it should be okay, and if you need any help, please reach out in the [Emerald Academy Discord](https://discord.gg/wjA875sMjV).
+Before we dive into the rest of the course, we'll need to make sure we have some things installed. Yes, this is incredibly annoying. But it should be okay, and if you need any help, please reach out in the [Emerald City Discord](https://discord.gg/emeraldcity).
 
 1. Node: https://nodejs.org/en/download/. *You can confirm this worked successfully if you type `node -v` into your terminal and it returns something back.*
 2. npx: Open up a terminal and run `npm install -g npx`. *You can confirm this worked successfully if you type `npx -v` into your terminal and it returns something back.*
